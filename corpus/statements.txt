@@ -1,0 +1,16 @@
+==================
+Return statements
+==================
+
+Integer "integer"
+    = _ [0-9]+ { return parseInt(text(), 10); }
+
+---
+
+(source_file
+  (definition
+    (identifier)
+    (parameter_list)
+    (primitive_type)
+    (expression
+      (return_statement (number)))))

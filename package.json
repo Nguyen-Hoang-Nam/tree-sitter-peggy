@@ -1,0 +1,22 @@
+{
+  "name": "tree-sitter-peggy",
+  "version": "1.0.0",
+  "description": "Tree-sitter for Pegjs",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tree-sitter",
+    "peggy",
+    "pegjs"
+  ],
+  "author": "Nguyen Hoang Nam",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.16.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.6"
+  }
+}
