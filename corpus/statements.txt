@@ -3,14 +3,18 @@ Return statements
 ==================
 
 Integer "integer"
-    = _ [0-9]+ { return parseInt(text(), 10); }
+    = _ [0-9]+ { return Integer; }
 
 ---
 
 (source_file
-  (definition
-    (identifier)
-    (parameter_list)
-    (primitive_type)
-    (expression
-      (return_statement (number)))))
+  (rule
+    (label)
+    (literal)
+    (parsing_expression
+      (expression
+        (label))
+      (expression
+        (regular_expression)))
+    (block
+      (raw_text))))
